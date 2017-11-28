@@ -11,15 +11,15 @@ env:
   global:
     - ENVG: "goo"
   matrix:
-    - ENV1: "foo"
-      ENV2: "bar"
+    - env1: "foo"
+      env2: "bar"
     - ENV1: "boo"
       ENV2: "car"
 
 matrix:
   exclude:
     - python: 3.6
-      env: ENV1=foo ENV2=bar
+      env: env1=foo env2=bar
   #include:
    # - python: 3.6
     #  env: ENV1=foo ENV2=bar
