@@ -19,7 +19,8 @@ env:
 matrix:
   exclude:
     - python: 3.2
-      env: ENV1=foo
+      env:
+        - ENV1=foo
   #include:
    # - python: 3.6
     #  env: ENV1=foo ENV2=bar
