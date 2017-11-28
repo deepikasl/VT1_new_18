@@ -1,29 +1,20 @@
-# Language setting
 language: python
 
-# Version number
 python:
   - 2.7
   - 3.2
   - 3.6
-
+  
 env:
-  #global:
-    #- ENVG: "goo"
-  #matrix:
-   - ENV1: "foo"
-     #ENV2: "bar"
-   #- ENV1: "boo"
-    # ENV2: "car"
-
+  - env=test1
 matrix:
-  exclude:
-    - python: 3.2
+#excludes this version 
+  
+  exclude:             
+    - python: 3.6
       env:
-        - ENV1=foo
-  #include:
-   # - python: 3.6
-    #  env: ENV1=foo ENV2=bar
+        - env=test1 
+#allows failure for this version
   allow_failures:
     - python: 3.2
 
