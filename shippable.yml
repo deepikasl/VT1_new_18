@@ -11,15 +11,15 @@ env:
   global:
     - ENVG: "goo"
   matrix:
-    - env11: "foo"
-      env2: "bar"
+    - ENV1: "foo"
+      ENV2: "bar"
     - ENV1: "boo"
       ENV2: "car"
 
 matrix:
   exclude:
-    - python: 3.6
-      env: env11=foo env2=bar
+    - python: 3.2
+      env: ENV1=foo ENV2=bar
   #include:
    # - python: 3.6
     #  env: ENV1=foo ENV2=bar
@@ -41,28 +41,4 @@ matrix:
 build:
   ci:
     - python --version
-    - |
-      echo "ENV1=$ENV1"
-      echo "ENV2=$ENV2"
-      echo "ENVG=$ENVG"
-      echo "$SHIPPABLE_PYTHON_VERSION=$$SHIPPABLE_PYTHON_VERSION"
-    - |
-      if [ "$ENV1" == "foo" ]; then
-        if [ "$ENV2" != "bar" ]; then
-          echo "Matrix was not setup correctly"
-          exit 1
-        fi
-      fi
-    - |
-      if [ "$ENV1" == "boo" ]; then
-        if [ "$ENV2" != "car" ]; then
-          echo "Matrix was not setup correctly"
-          exit 1
-        fi
-      fi
-    - |
-      if [ "$ENVG" != "goo" ]; then
-        echo "Matrix was not setup correctly"
-        exit 1
-      fi
 
