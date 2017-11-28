@@ -5,7 +5,8 @@ language: python
 python:
   - 2.7
   - 3.2
-  #- 3.6
+  - 3.6
+  - 3.6
 
 env:
   global:
@@ -20,9 +21,9 @@ matrix:
   #exclude:
     #- python: 3.6
      # env: ENV1=foo ENV2=bar
-  include:
-    - python: 3.6
-      env: ENV1=foo ENV2=bar
+  #include:
+   # - python: 3.6
+    #  env: ENV1=foo ENV2=bar
   allow_failures:
     - python: 3.2
 
