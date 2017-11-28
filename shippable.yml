@@ -10,17 +10,13 @@ jdk:
 env:
   - env=test1
 matrix:
-#include this version with the env 
   include:               
     - jdk: openjdk7
       env: foo=fubu joo=boo
-#excludes this version 
-  
   exclude:             
     - jdk: oraclejdk8
       env:
         - env=test1 
-#allows failure for this version
   allow_failures:
     - jdk: oraclejdk9
 git:
