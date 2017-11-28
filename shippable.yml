@@ -11,8 +11,7 @@ env:
   global:
     - ENVG: "goo"
   matrix:
-    - ENV1: "foo"
-      ENV2: "bar"
+    - ENV1: "foo" ENV2: "bar"
     - ENV1: "boo"
       ENV2: "car"
 
