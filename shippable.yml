@@ -11,11 +11,11 @@ env:
   global:
     - ENVG: "goo"
   matrix:
-    - ENV1: "foo"
-      ENV2: "bar"
-      ENV3: "tar"
-    - ENV1: "boo"
-      ENV2: "car"
+    - ENV1=foo
+      ENV2=bar
+      ENV3=tar
+    - ENV1=boo
+      ENV2=car
 
 matrix:
   exclude:
