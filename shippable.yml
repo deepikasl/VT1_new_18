@@ -30,10 +30,10 @@ matrix:
 # $SHIPPABLE_PYTHON_VERSION=2.7 ENV1: "foo" ENV2: "bar" ENVG: "goo"
 # $SHIPPABLE_PYTHON_VERSION=2.7 ENV1: "boo" ENV2: "car" ENVG: "goo"
 
-# $SHIPPABLE_PYTHON_VERSION=3.2 ENV1: "foo" ENV2: "bar" ENVG: "goo"   FAILS
-# $SHIPPABLE_PYTHON_VERSION=3.2 ENV1: "boo" ENV2: "car" ENVG: "goo"   FAILS
+# $SHIPPABLE_PYTHON_VERSION=3.6 ENV1: "foo" ENV2: "bar" ENVG: "goo"   FAILS
+# $SHIPPABLE_PYTHON_VERSION=3.6 ENV1: "boo" ENV2: "car" ENVG: "goo"   FAILS
 
-# $SHIPPABLE_PYTHON_VERSION=3.6 ENV1: "boo" ENV2: "car" ENVG: "goo"
+# $SHIPPABLE_PYTHON_VERSION=3.2 ENV1: "boo" ENV2: "car" ENVG: "goo"
 
 build:
   ci:
