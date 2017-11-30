@@ -13,7 +13,7 @@ env:
   matrix:
     - ENV1=foo
       ENV2=bar
-      #ENV3=tar
+      ENV3=tar
     - ENV1=boo
       ENV2=car
 
