@@ -19,10 +19,10 @@ env:
 
 matrix:
   exclude:
-    - python: 3.6
+    - python: 3.2
       env: ENV1=foo ENV2=bar ENV3=tar
   allow_failures:
-    - python: 3.2
+    - python: 3.6
 
 # the above combination should result in the following 6 matrix, 2 of which will
 # fail, but allow failures will still get the build to succeed
