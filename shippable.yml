@@ -10,9 +10,9 @@ build:
     - python --version
    # - shipctl put_resource_state "test_params" TRIGGER_REASON BaseImgChanged
 
-#integrations:
- # notifications:
-  #  - integrationName: deepika-webhookV2   #issue will get created in github samleNod project
+integrations:
+  notifications:
+    - integrationName: deepika-webhookV2   #issue will get created in github samleNod project
    #   type: webhook
     #  payload:
      #   - title=Failure - $REPO_FULL_NAME - $BUILD_NUMBER
@@ -21,3 +21,10 @@ build:
       #on_success: always
       #on_failure: always   
  
+    - integrationName: email         
+      type: email        
+      recipients: 
+        - deepika@shippable.com
+      on_start: always
+      on_success: always 
+      on_failure: always 
