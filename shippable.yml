@@ -10,16 +10,8 @@ build:
     - python --version
 
 integrations:
-  notifications:  
-    - integrationName: email
-      type: email
-      recipients: 
-        - deepika@shippable.com
-      sendLogsInEmail: true
+  generic:  
+    - integrationName: deepika-kubes
+      type: kubernetesConfig
       
-    - integrationName: deepika-slack
-      type: slack
-      recipients:
-        - "#deepika-test"
-
 
