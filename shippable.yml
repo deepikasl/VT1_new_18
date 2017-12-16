@@ -8,5 +8,6 @@ python:
 build:
   ci:
     - python --version
+    - echo "you are here"
    # - shipctl put_resource_state "test_params" TRIGGER_REASON BaseImgChanged
 
