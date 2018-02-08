@@ -1,6 +1,9 @@
 # Language setting
 language: python
 
+runtime:
+  nodePool: test-node-custom-manual
+ 
 # Version number
 python:
   - 2.7
