@@ -2,7 +2,7 @@
 language: python
 
 runtime:
-  nodePool: nodePool-test
+  nodePool: deepika-test-nodePool
  
 # Version number
 python:
