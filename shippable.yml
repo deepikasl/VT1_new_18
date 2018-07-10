@@ -11,15 +11,6 @@ python:
 build:
   ci:
     - python --version
-    - echo "here"
-    - echo "here"
-    - echo "here"
-    - echo "here"
-    - echo "here"
-    - echo "here"
-    - echo "here"
-    - echo "here"
-    - echo "here"
-    - echo "here"
+    - apt-get install cowsay
 
    
