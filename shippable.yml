@@ -12,5 +12,6 @@ build:
   ci:
     - python --version
     - apt-get install cowsay
+    - apt-get install python-pip
 
    
