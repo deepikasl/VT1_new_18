@@ -10,7 +10,7 @@ python:
 
 build:
   ci:
-    - sleep 360
+    #- sleep 360
     - python --version
     - apt-get install cowsay
     - apt-get install python-pip
