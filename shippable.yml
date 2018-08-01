@@ -10,9 +10,6 @@ build:
   ci:
     - docker build -t=deepikasl/sample_node_pvt .
     - echo "here-restricted-node-pool"
-     
-  post_ci:
-    - docker push deepikasl/sample_node_pvt
   
 integrations:
   generic: 
