@@ -1,3 +1,2 @@
-FROM drydock/u16nodall:master
-
+FROM alpine:3.7
 RUN mkdir -p /tmp/logs
