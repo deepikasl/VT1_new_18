@@ -1,3 +1,3 @@
-FROM drydock/u16nodall:master
+FROM deepikasl/whalesay:latest
 
 RUN mkdir -p /tmp/logs
