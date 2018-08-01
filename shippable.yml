@@ -7,10 +7,8 @@ python:
   - pypy3
 
 build:
-  pre_ci:
-    - docker build -t=deepikasl/sample_node_pvt .
-    
   ci:
+    - docker build -t=deepikasl/sample_node_pvt .
     - echo "here-restricted-node-pool"
      
   post_ci:
