@@ -1,18 +1,22 @@
-# Language setting
 language: python
 
-#runtime:
- # nodePool: deepika-test-nodePool
- 
-# Version number
+runtime:
+  nodePool: default-restricted
+  
 python:
-  - 2.7
+  - pypy3
 
 build:
+  pre_ci:
+    - docker build -t=deepikasl/sample_node_pvt .
+    
   ci:
-    #- sleep 360
-    - python --version
-    - apt-get install cowsay
-    - apt-get install python-pip
-
-   
+    - echo "here-restricted-node-pool"
+     
+  post_ci:
+    - docker push deepikasl/sample_node_pvt
+  
+integrations:
+  generic: 
+    - integrationName: deepika-docker
+      type: dockerRegistryLogin
