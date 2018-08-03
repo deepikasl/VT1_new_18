@@ -4,7 +4,7 @@ runtime:
   nodePool: default-restricted
   
 python:
-  - pyp3
+  - 2.7
 
 build:
   ci:
