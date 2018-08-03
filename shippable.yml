@@ -15,4 +15,3 @@ integrations:
   generic: 
     - integrationName: deepika-docker
       type: dockerRegistryLogin
-
