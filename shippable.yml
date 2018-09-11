@@ -9,6 +9,10 @@ language: python
 python:
   - 2.7
 
+env:
+  global:
+    - ENV1: "goo"
+
 build:
   ci:
     #- sleep 360
